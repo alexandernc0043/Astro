@@ -1,0 +1,25 @@
+---
+import Header from "../components/personal/Header.astro";
+import Footer from "../components/personal/Footer.astro";
+import "../styles/personal.css";
+const { title = "" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander's Charlotte Website ~ {title}</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

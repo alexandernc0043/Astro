@@ -1,0 +1,29 @@
+---
+const { title } = Astro.props;
+import Header from "../components/course/Header.astro";
+import Footer from "../components/course/Footer.astro";
+import "../styles/course.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Prechtel's Advanced Pegasus | ITIS3135 | {title}</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <script>
+      // JavaScript Goes Here
+      console.log("Welcome to my ITIS3135 course page");
+    </script>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
