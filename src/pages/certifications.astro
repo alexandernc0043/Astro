@@ -1,0 +1,43 @@
+---
+import Layout from "@/layouts/Personal.astro";
+import Cert from "@/components/certification.astro";
+---
+
+<Layout title="Certifications">
+  <h2>Certifications</h2>
+  <br />
+  <p>
+    I have the following certifications from
+    <a
+      href="https://www.coursera.org/google-career-certificates"
+      target="_blank">Google</a
+    >:
+  </p>
+  <ul>
+    <Cert
+      name="Foundations of Cybersecurity"
+      link="https://www.coursera.org/account/accomplishments/verify/BX0G6PC151WO"
+    />
+  </ul>
+  <br />
+  <hr />
+  <br />
+  <p>
+    I have the following certifications from
+    <a href="https://www.freecodecamp.com" target="_blank">freeCodeCamp</a>:
+  </p>
+  <ul>
+    <Cert
+      name="Javascript Algorithms and Data Structures"
+      link="https://www.freecodecamp.org/certification/aprechte/javascript-algorithms-and-data-structures-v8"
+    />
+    <Cert
+      name="Responsive Web Design"
+      link="https://www.freecodecamp.org/certification/aprechte/responsive-web-design"
+    />
+    <Cert
+      name="Backend Development"
+      link="https://www.freecodecamp.org/certification/aprechte/back-end-development-and-apis"
+    />
+  </ul>
+</Layout>
